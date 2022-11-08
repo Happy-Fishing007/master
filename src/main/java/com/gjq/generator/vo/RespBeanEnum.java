@@ -11,6 +11,7 @@ public enum RespBeanEnum {
     ERROR(500,"服务端异常");
 
 
+
     private  final Integer code;
     private  final String message;
 
