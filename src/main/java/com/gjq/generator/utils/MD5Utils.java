@@ -20,12 +20,12 @@ public class MD5Utils {
     }
 
     public static String inputPassToFromPass(String inputPass) {
-        String str = slat.charAt(0) + slat.charAt(3) + inputPass + slat.charAt(2) + slat.charAt(6);
+        String str =""+ slat.charAt(0) + slat.charAt(3) + inputPass + slat.charAt(2) + slat.charAt(6);
         return DigestUtils.md5Hex(str);
     }
 
     public static String fromPassToBasePass(String fromPass, String slat) {
-        String str = slat.charAt(0) + slat.charAt(3) + fromPass + slat.charAt(2) + slat.charAt(6);
+        String str = ""+slat.charAt(0) + slat.charAt(3) + fromPass + slat.charAt(2) + slat.charAt(6);
         return DigestUtils.md5Hex(str);
     }
 
@@ -37,7 +37,7 @@ public class MD5Utils {
 
     public static void main(String[] args) {
         System.out.println(inputPassToFromPass("123456"));
-        //37c71fd3c5591b4a75da1db3a5ac6d3b
-        System.out.println(fromPassToBasePass("37c71fd3c5591b4a75da1db3a5ac6d3b","1a2b33c4d"));
+        //94ea9c92b52bcab4aa3c147e83e1efa4
+        System.out.println(fromPassToBasePass("94ea9c92b52bcab4aa3c147e83e1efa4","1a2b3c4d"));
     }
 }

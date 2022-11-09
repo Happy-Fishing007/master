@@ -29,7 +29,7 @@ public class Generator {
                             .serviceImpl("service.Impl")
                             .controller("controller")
 //                            .moduleName("springboot") // 设置父包模块名
-                            .pathInfo(Collections.singletonMap(OutputFile.mapperXml, "D:\\file\\springboot\\plrk\\src\\main\\resources\\mapper")); // 设置mapperXml生成路径
+                            .pathInfo(Collections.singletonMap(OutputFile.mapperXml, "D:\\file\\github_project\\skilldemo\\master\\src\\main\\resources\\mapper")); // 设置mapperXml生成路径
                 })
                 .strategyConfig(builder -> {
                     builder.addInclude("t_user") // 设置需要生成的表名

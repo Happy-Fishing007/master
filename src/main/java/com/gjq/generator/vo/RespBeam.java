@@ -18,10 +18,10 @@ public class RespBeam {
      * @Date: 2022/11/8  15:56
      */
     public static RespBeam success() {
-        return new RespBeam(RespBeanEnum.SUCCESS.getCode(), RespBeam.success().getMessage(), null);
+        return new RespBeam(RespBeanEnum.SUCCESS.getCode(), RespBeanEnum.SUCCESS.getMessage(), null);
     }
     public static RespBeam success(Object obj) {
-        return new RespBeam(RespBeanEnum.SUCCESS.getCode(), RespBeam.success().getMessage(), obj);
+        return new RespBeam(RespBeanEnum.SUCCESS.getCode(), RespBeanEnum.SUCCESS.getMessage(), obj);
     }
     /**
      * @Author: gjq
