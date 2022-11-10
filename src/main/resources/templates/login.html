@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"
-           xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
        <meta charset="UTF-8">
        <title>登录</title>
@@ -84,6 +83,7 @@ auto">
                                    layer.closeAll();
                                    if (data.code == 200) {
                                           layer.msg("成功");
+                                          window.location.href="/goods/toList";
                                    } else {
                                           layer.msg(data.message);
                                    }
