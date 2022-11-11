@@ -24,4 +24,11 @@ public interface IUserService extends IService<User> {
      * @Date: 2022/11/9  9:40
      */
     RespBeam doLogin(LoginVo loginVo, HttpServletRequest request, HttpServletResponse response);
+
+/**
+ * @Author: gjq
+ * @Description:根据cookie获取用户对象
+ * @Date: 2022/11/11  9:35
+ */
+    User getUserByCookie(String userTicket,HttpServletRequest request,HttpServletResponse response);
 }
