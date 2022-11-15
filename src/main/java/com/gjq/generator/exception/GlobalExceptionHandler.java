@@ -21,6 +21,7 @@ public class GlobalExceptionHandler {
             respBeam.setMessage("参数校验异常：" + ex.getBindingResult().getAllErrors().get(0).getDefaultMessage());
             return respBeam;
         }
+        System.out.println(e);
         return RespBeam.error(RespBeanEnum.ERROR);
     }
 }

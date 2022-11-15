@@ -32,7 +32,7 @@ public class Generator {
                             .pathInfo(Collections.singletonMap(OutputFile.mapperXml, "D:\\file\\github_project\\skilldemo\\master\\src\\main\\resources\\mapper")); // 设置mapperXml生成路径
                 })
                 .strategyConfig(builder -> {
-                    builder.addInclude("t_user") // 设置需要生成的表名
+                    builder.addInclude("t_goods","t_order","t_seckill_goods","t_seckill_order") // 设置需要生成的表名
                             .addTablePrefix("t_", "c_"); // 设置过滤表前缀
                 })
                 .templateEngine(new FreemarkerTemplateEngine()) // 使用Freemarker引擎模板，默认的是Velocity引擎模板
